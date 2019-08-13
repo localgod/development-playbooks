@@ -1,0 +1,4 @@
+- name: Git
+  import_playbook: git.yml
+- name: Atom
+  import_playbook: atom.yml
