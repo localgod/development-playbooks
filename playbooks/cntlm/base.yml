@@ -1,0 +1,32 @@
+- hosts:         localhost
+  tasks:
+    - name:      Install the latest version of cntlm
+      yum:
+        name:    cntlm
+        state:   latest
+
+    - name:      Add cntlm configuration
+      template:
+        src:     ./templates/cntlm.conf
+        dest:    /etc/cntlm.conf
+        owner:   root
+        group:   root
+        mode:    '0644'
+
+    - name:      Set general system proxy
+      template:
+        src:     ./templates/cntlm.sh
+        dest:    /etc/profile.d/cntlm.sh
+        owner:   root
+        group:   root
+        mode:    '0644'
+
+    - name:      Stop service cntlm
+      service:
+        name:    cntlm
+        state:   stopped
+
+    - name:      Disable service cntlm, and not touch the state
+      service:
+        name:    cntlm
+        enabled: no

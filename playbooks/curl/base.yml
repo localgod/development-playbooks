@@ -1,0 +1,14 @@
+- hosts:        localhost
+  tasks:
+    - name:     Install the latest version of curl
+      yum:
+        name:   curl
+        state:  latest
+
+    - name:     Configure curl
+      template:
+        src:    ./templates/.curlrc
+        dest:   /home/vagrant/.curlrc
+        owner:  vagrant
+        group:  vagrant
+        mode:   '0644'

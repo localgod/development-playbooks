@@ -1,0 +1,24 @@
+- hosts:        localhost
+  tasks:
+    - name:     Install the latest version of bash
+      yum:
+        name:
+         - bash
+         - bash-completion
+        state:  latest
+
+    - name:     Configure bash rc
+      template:
+        src:    ./templates/.bashrc
+        dest:   /home/vagrant/.bashrc
+        owner:  vagrant
+        group:  vagrant
+        mode:   '0644'
+
+    - name:     Configure bash profile
+      template:
+        src:    ./templates/.bash_profile
+        dest:   /home/vagrant/.bash_profile
+        owner:  vagrant
+        group:  vagrant
+        mode:   '0644'

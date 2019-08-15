@@ -1,0 +1,14 @@
+- hosts:        localhost
+  tasks:
+    - name:     Install the latest version of wget
+      yum:
+        name:   wget
+        state:  latest
+
+    - name:     Configure wget
+      template:
+        src:    ./templates/.wgetrc
+        dest:   /home/vagrant/.wgetrc
+        owner:  vagrant
+        group:  vagrant
+        mode:   '0644'

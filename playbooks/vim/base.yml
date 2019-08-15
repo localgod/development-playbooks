@@ -1,0 +1,14 @@
+- hosts:        localhost
+  tasks:
+    - name:     Install the latest version of vim
+      yum:
+        name:   vim
+        state:  latest
+
+    - name:     Configure vim
+      template:
+        src:    ./templates/.vimrc
+        dest:   /home/vagrant/.vimrc
+        owner:  vagrant
+        group:  vagrant
+        mode:   '0644'

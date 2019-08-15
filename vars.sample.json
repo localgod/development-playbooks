@@ -1,0 +1,16 @@
+{
+  "cntlm": {
+    "user": "john",
+    "password": "secret",
+    "domain": "example",
+    "host": "example",
+    "port": 8080,
+    "noproxy": ["127.0.0.*", "localhost"]
+  },
+  "git": {
+    "user": "John Doe",
+    "email": "john@example.com",
+    "public": "ssh-rsa A+dummy+key+AAAB3NzaC1yc2EAAAADAQABAAABAQCweUJikPgphZuu+lRoqH14P+lUEgNwCfoOOdgyTt4ON/Na4XDLYbCWUamUyxfIxLMCgZbmvt6hT7JAF33RpclwKTs+KCuH2ZNdEibErHLj5SD9ODy4pgTJSYVAh7Z4vPm88uwxgwtyh0YyFBTjGN01GRBU+X6xftMalc9T6qrf1ksV+yjocgCX9dSfqRzSifpUYP7Fqpl1VoycujcL75YjisKpq1VnveZGZReV5tCY72AVDbAIPhujyRR89Fw74eTO90BQzhJROjb47XVs4//84/xGoBa6wKbWGPWnEZSdv/3jyd6o5MmGEFV3BI5nD+wtUfn john@example.com",
+    "private": "-----BEGIN RSA PRIVATE KEY-----\nM+dummy+key+IIEpQIBAAKCAQEAsHlCYpD4KYWbrvpUaKh9eD/pVBIDcAn6DjnYMk7eDjfzWuFw\ny2GwllGplMsXyMSzAoGW5r7eoU+yQBd90aXJcCk7Pigrh9mTXRImxKxy4+Ug/Tg8\nuKYEyUmFQIe2eLz5vPLsMYMASFSTlQCsoc50wMdwBj4dGMhQU8xjdNRkQVPl+sX7\nTGpXPU+qq39ZLFfso6HIAl/XUn6kc0on6VGD+xaig9VaMnLo3C++WI4rCqatVZ73\nmRmUXlebQmO9gFQ2wCD4bo8kUWVhcO+HkzvdAUM4SUTo2+O11bOP//OP8RqAWusC\nm1hj1pxGUnb/948neqOTJhhBVdwSOZw/sLVH5wIDAQABAoIBAQCgCuh8kXKt3WCq\nWJYycBOR+Yw21TtO4Y1oV2dNwJ77kBxgIDH2ELtgJ+E+cs04I8Mhk7vxucoXyzoh\ny+wsNEkyYBv0nwilTqpm3a8gNwWp3zfhN5IZEi0WF6VzxLhgUgLdz\nGzB0cdMKfhSHZM9oiUnn61rLOk9NujGF0+966GydhEc1iNMqF0OQ0DaDsXLnLqO8\ni/hCPJxSBKNTHNCfR+8w7snoirjqy7RT/kHeGZD4ALyCfgknK53X7eVzPOlCfMD3\nCgete6c6SIoG8da2RsZYb4OZznXL2DbEmI9/gALhFxYeGcXU+bHDoXs1ERGGE+IY\nMLyjTo0JAoGBAOIZe6/J+eArEj08eRpKADzKCj48wehSKewO4jWr+ZJWgboLYNYY\nLwX9qbx0BniwZ9TUcreGz3gW6C2Kx2ItL0ynOjuU8KIsAoRhcy354xjWRKxMyBLS\noqdMwLWf8XlhBOyY1g8EMYmJuaGb+Uc8MP4m4mJ437odCSl6kXVL03MNAoGBAMfP\nteAOzbosfRgBRZWvCY0OTOjlvqPeHKuysO7biRzhZCqBdOaH6oj6XY8VB/E/q+mr\nkP0AiIJLEmPpujCrX9mkLTX9gElnvSvSxWbavNVALIijMfKj01Gi5nlRpK7vF9GQ\nNzX267Z/jAzPIQAPh1x2Dmx4tLdG7aOaHw+ncfnDAoGBAKkN+Mdls6oDSm3zC3G2\npxrMzn/emfYFiUbxkf4jikX63KCo5UzvrCmMkx9PeY9AB0LBXs0OxY27Qvraa15i\n/pzH5Oir4oi/c1pcKuzTjRQDEfHqryYzzF5fKzAiWUEyY6YsWNF9hzSZf+zwXKEA\nxnkhxd9vFYlpMHKNLLmRapb5AoGAGreITyRLl9g5BcutvT0BXu4JlJ6bphed58tl\n4xpRtB3jIdfbhLOpxZUMi4Q5YqWr2/vH0DyRBDL7i4aGEdnoYBaWwQBbdfU8Ey8E\nnCMlWrJRAhgoJpSHPgQ1IwWqqoVnvuq0py+UBvv5AwFzHSn2ZIOYnCJrr5H5VoXW\nH2a5U7cCgYEA24UGhyMagZ6aD4lUxp54vxaOnaKSwzN9hJe/nCsGWz7QJGwG71e5\n0EVwuHcdrCWESGU7jPkqSXbUOXnk12lEmRYSP9WYY0EGxRTJpQYfIUX4QjXYPLat\nKgaFYJLv899qoReB1+ZNmxpnuZaBV+thfFydr4EoU56L1N+CCNCfNrU=\n-----END RSA PRIVATE KEY-----"
+  }
+}

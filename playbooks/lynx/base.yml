@@ -1,0 +1,6 @@
+- hosts:       localhost
+  tasks:
+    - name:    Install the latest version of lynx
+      yum:
+        name:  lynx
+        state: latest
