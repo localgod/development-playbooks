@@ -1,0 +1,11 @@
+playbooks/bash/base.yml package-latest
+playbooks/cntlm/base.yml package-latest
+playbooks/curl/base.yml package-latest
+playbooks/docker/base.yml package-latest
+playbooks/dos2unix/base.yml package-latest
+playbooks/firefox/base.yml package-latest
+playbooks/git/base.yml package-latest
+playbooks/jq/base.yml package-latest
+playbooks/lynx/base.yml package-latest
+playbooks/vim/base.yml package-latest
+playbooks/wget/base.yml package-latest

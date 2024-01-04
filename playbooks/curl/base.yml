@@ -1,14 +1,16 @@
-- hosts:        localhost
+---
+- name: Install the latest version of curl
+  hosts: localhost
   tasks:
-    - name:     Install the latest version of curl
-      yum:
-        name:   curl
-        state:  latest
+    - name: Install the latest version of curl
+      ansible.builtin.yum:
+        name: curl
+        state: latest
 
-    - name:     Configure curl
-      template:
-        src:    ./templates/.curlrc
-        dest:   /home/vagrant/.curlrc
-        owner:  vagrant
-        group:  vagrant
-        mode:   '0644'
+    - name: Configure curl
+      ansible.builtin.template:
+        src: ./templates/.curlrc
+        dest: /home/vagrant/.curlrc
+        owner: vagrant
+        group: vagrant
+        mode: "0644"

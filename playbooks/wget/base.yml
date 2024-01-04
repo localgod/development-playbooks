@@ -1,14 +1,16 @@
-- hosts:        localhost
+---
+- name: Install the latest version of wget
+  hosts: localhost
   tasks:
-    - name:     Install the latest version of wget
-      yum:
-        name:   wget
-        state:  latest
+    - name: Install the latest version of wget
+      ansible.builtin.yum:
+        name: wget
+        state: latest
 
-    - name:     Configure wget
-      template:
-        src:    ./templates/.wgetrc
-        dest:   /home/vagrant/.wgetrc
-        owner:  vagrant
-        group:  vagrant
-        mode:   '0644'
+    - name: Configure wget
+      ansible.builtin.template:
+        src: ./templates/.wgetrc
+        dest: /home/vagrant/.wgetrc
+        owner: vagrant
+        group: vagrant
+        mode: "0644"

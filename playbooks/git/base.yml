@@ -1,36 +1,43 @@
-- hosts:        localhost
+---
+- name: Install the latest version of git
+  hosts: localhost
   tasks:
-    - name:     Install the latest version of git
-      yum:
-        name:   git
-        state:  latest
+    - name: Install the latest version of git
+      ansible.builtin.yum:
+        name: git
+        state: latest
 
-    - name:     Configure git
-      template:
-        src:    ./templates/.gitconfig
-        dest:   /home/vagrant/.gitconfig
-        owner:  vagrant
-        group:  vagrant
-        mode:   '0644'
+    - name: Configure git
+      ansible.builtin.template:
+        src: ./templates/.gitconfig
+        dest: /home/vagrant/.gitconfig
+        owner: vagrant
+        group: vagrant
+        mode: "0644"
 
     - name: Create public key file
-      file:
+      ansible.builtin.file:
         path: /home/vagrant/.ssh/id_rsa.pub
         owner: vagrant
         group: vagrant
-        mode: '0664'
+        mode: "0664"
         state: touch
 
     - name: Create private key file
-      file:
+      ansible.builtin.file:
         path: /home/vagrant/.ssh/id_rsa
         owner: vagrant
         group: vagrant
-        mode: '0400'
+        mode: "0400"
         state: touch
 
     - name: Set public key
-      copy: content="{{ git['public'] }}" dest=/home/vagrant/.ssh/id_rsa.pub
-
+      ansible.builtin.copy:
+        content: '"{{'
+        dest: /home/vagrant/.ssh/id_rsa.pub
+        cmd: git['public'] }}"
     - name: Set private key
-      copy: content="{{ git['private'] }}" dest=/home/vagrant/.ssh/id_rsa
+      ansible.builtin.copy:
+        content: '"{{'
+        dest: /home/vagrant/.ssh/id_rsa
+        cmd: git['private'] }}"

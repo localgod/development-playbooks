@@ -1,0 +1,11 @@
+---
+tasks:
+  - before: |
+      pip install --upgrade pip
+      pip install ansible-lint
+    init: |
+      npm install
+    command: npm run dev
+vscode:
+  extensions:
+    - redhat.ansible

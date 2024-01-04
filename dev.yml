@@ -1,24 +1,23 @@
-- name:            Atom
-  import_playbook: ./playbooks/atom/base.yml
-- name:            Bash
+---
+- name: Bash
   import_playbook: ./playbooks/bash/base.yml
-- name:            Cntlm
+- name: Cntlm
   import_playbook: ./playbooks/cntlm/base.yml
-- name:            Curl
+- name: Curl
   import_playbook: ./playbooks/curl/base.yml
-- name:            docker
+- name: Docker
   import_playbook: ./playbooks/docker/base.yml
-- name:            dos2unix
+- name: Dos2unix
   import_playbook: ./playbooks/dos2unix/base.yml
-- name:            firefox
+- name: Firefox
   import_playbook: ./playbooks/firefox/base.yml
-- name:            git
+- name: Git
   import_playbook: ./playbooks/git/base.yml
-- name:            jq
+- name: Jq
   import_playbook: ./playbooks/jq/base.yml
-- name:            lynx
+- name: Lynx
   import_playbook: ./playbooks/lynx/base.yml
-- name:            vim
+- name: Vim
   import_playbook: ./playbooks/vim/base.yml
-- name:            wget
+- name: Wget
   import_playbook: ./playbooks/wget/base.yml

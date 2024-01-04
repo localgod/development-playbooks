@@ -1,6 +1,8 @@
-- hosts:       localhost
+---
+- name: Install the latest version of firefox
+  hosts: localhost
   tasks:
-    - name:    Install the latest version of firefox
-      yum:
-        name:  firefox
+    - name: Install the latest version of firefox
+      ansible.builtin.yum:
+        name: firefox
         state: latest

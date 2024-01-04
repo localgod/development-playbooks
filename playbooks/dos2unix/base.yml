@@ -1,6 +1,8 @@
-- hosts:       localhost
+---
+- name: Install the latest version of dos2unix
+  hosts: localhost
   tasks:
-    - name:    Install the latest version of dos2unix
-      yum:
-        name:  dos2unix
+    - name: Install the latest version of dos2unix
+      ansible.builtin.yum:
+        name: dos2unix
         state: latest

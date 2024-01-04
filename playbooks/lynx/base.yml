@@ -1,6 +1,8 @@
-- hosts:       localhost
+---
+- name: Install the latest version of lynx
+  hosts: localhost
   tasks:
-    - name:    Install the latest version of lynx
-      yum:
-        name:  lynx
+    - name: Install the latest version of lynx
+      ansible.builtin.yum:
+        name: lynx
         state: latest

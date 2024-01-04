@@ -1,6 +1,8 @@
-- hosts:       localhost
+---
+- name: Install the latest version of jq
+  hosts: localhost
   tasks:
-    - name:    Install the latest version of jq
-      yum:
-        name:  jq
+    - name: Install the latest version of jq
+      ansible.builtin.yum:
+        name: jq
         state: latest
